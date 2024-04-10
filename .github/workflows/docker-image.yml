@@ -28,7 +28,9 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t slynnex/docker-graphql:0.0.2 .
+        docker build -t slynnex/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         docker push slynnex/docker-graphql:0.0.2
+        docker push slynnex/docker-graphql:latest
